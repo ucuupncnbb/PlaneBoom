@@ -64,6 +64,9 @@
 		EE9EAE341CB7E2640043F385 /* StrConstMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE321CB7E2640043F385 /* StrConstMgr.cpp */; };
 		EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3A1CB88EAC0043F385 /* CoverScene.cpp */; };
 		EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3D1CB899980043F385 /* HomeScene.cpp */; };
+		EEBCC33B1CC1E1DB00EF615A /* BattleContral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3351CC1E1DB00EF615A /* BattleContral.cpp */; };
+		EEBCC33C1CC1E1DB00EF615A /* BattleModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3371CC1E1DB00EF615A /* BattleModel.cpp */; };
+		EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */; };
 		EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949461CBE7EFD001C4EC0 /* GameScene.cpp */; };
 		EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */; };
 		EEDD20E41CB6B663006DD053 /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEDD20E21CB6B663006DD053 /* LayoutUtil.cpp */; };
@@ -165,6 +168,12 @@
 		EE9EAE3B1CB88EAC0043F385 /* CoverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverScene.h; sourceTree = "<group>"; };
 		EE9EAE3D1CB899980043F385 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
 		EE9EAE3E1CB899980043F385 /* HomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeScene.h; sourceTree = "<group>"; };
+		EEBCC3351CC1E1DB00EF615A /* BattleContral.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleContral.cpp; sourceTree = "<group>"; };
+		EEBCC3361CC1E1DB00EF615A /* BattleContral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleContral.h; sourceTree = "<group>"; };
+		EEBCC3371CC1E1DB00EF615A /* BattleModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleModel.cpp; sourceTree = "<group>"; };
+		EEBCC3381CC1E1DB00EF615A /* BattleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleModel.h; sourceTree = "<group>"; };
+		EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleView.cpp; sourceTree = "<group>"; };
+		EEBCC33A1CC1E1DB00EF615A /* BattleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleView.h; sourceTree = "<group>"; };
 		EED949461CBE7EFD001C4EC0 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScene.cpp; sourceTree = "<group>"; };
 		EED949471CBE7EFD001C4EC0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadyScene.cpp; sourceTree = "<group>"; };
@@ -302,6 +311,7 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EEBCC3341CC1E1DB00EF615A /* battle */,
 				EE9EAE391CB88EAC0043F385 /* ui */,
 				EEDD20E11CB6B5ED006DD053 /* common */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
@@ -371,6 +381,19 @@
 				EE9EAE3B1CB88EAC0043F385 /* CoverScene.h */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		EEBCC3341CC1E1DB00EF615A /* battle */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCC3351CC1E1DB00EF615A /* BattleContral.cpp */,
+				EEBCC3361CC1E1DB00EF615A /* BattleContral.h */,
+				EEBCC3371CC1E1DB00EF615A /* BattleModel.cpp */,
+				EEBCC3381CC1E1DB00EF615A /* BattleModel.h */,
+				EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */,
+				EEBCC33A1CC1E1DB00EF615A /* BattleView.h */,
+			);
+			path = battle;
 			sourceTree = "<group>";
 		};
 		EEDD20E11CB6B5ED006DD053 /* common */ = {
@@ -521,11 +544,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEBCC33C1CC1E1DB00EF615A /* BattleModel.cpp in Sources */,
 				EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				EE8D73141CB6BCC4006EFDD5 /* ResourceName.cpp in Sources */,
+				EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */,
 				EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				EEBCC33B1CC1E1DB00EF615A /* BattleContral.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
