@@ -4,7 +4,7 @@
 #include "cocos2d.h"
 #include "Def.h"
 
-#import<Def.h>
+
 
 using namespace std;
 

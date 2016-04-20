@@ -59,9 +59,10 @@
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
+		EE3F61171CC4042C00EA9D24 /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */; };
+		EE3F61181CC4042C00EA9D24 /* ResourceName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61131CC4042C00EA9D24 /* ResourceName.cpp */; };
+		EE3F61191CC4042C00EA9D24 /* StrConstMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61151CC4042C00EA9D24 /* StrConstMgr.cpp */; };
 		EE8D73121CB6BA75006EFDD5 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = EE8D73111CB6BA75006EFDD5 /* Images */; };
-		EE8D73141CB6BCC4006EFDD5 /* ResourceName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE8D73131CB6BCC4006EFDD5 /* ResourceName.cpp */; };
-		EE9EAE341CB7E2640043F385 /* StrConstMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE321CB7E2640043F385 /* StrConstMgr.cpp */; };
 		EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3A1CB88EAC0043F385 /* CoverScene.cpp */; };
 		EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3D1CB899980043F385 /* HomeScene.cpp */; };
 		EEBCC33B1CC1E1DB00EF615A /* BattleContral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3351CC1E1DB00EF615A /* BattleContral.cpp */; };
@@ -69,7 +70,6 @@
 		EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */; };
 		EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949461CBE7EFD001C4EC0 /* GameScene.cpp */; };
 		EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */; };
-		EEDD20E41CB6B663006DD053 /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEDD20E21CB6B663006DD053 /* LayoutUtil.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,12 +158,14 @@
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		EE3F61101CC4042C00EA9D24 /* Def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Def.h; sourceTree = "<group>"; };
+		EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LayoutUtil.cpp; sourceTree = "<group>"; };
+		EE3F61121CC4042C00EA9D24 /* LayoutUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutUtil.h; sourceTree = "<group>"; };
+		EE3F61131CC4042C00EA9D24 /* ResourceName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ResourceName.cpp; sourceTree = "<group>"; };
+		EE3F61141CC4042C00EA9D24 /* ResourceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceName.h; sourceTree = "<group>"; };
+		EE3F61151CC4042C00EA9D24 /* StrConstMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrConstMgr.cpp; sourceTree = "<group>"; };
+		EE3F61161CC4042C00EA9D24 /* StrConstMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrConstMgr.h; sourceTree = "<group>"; };
 		EE8D73111CB6BA75006EFDD5 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
-		EE8D73131CB6BCC4006EFDD5 /* ResourceName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ResourceName.cpp; path = common/ResourceName.cpp; sourceTree = "<group>"; };
-		EE8D73151CB6BCCE006EFDD5 /* ResourceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceName.h; path = common/ResourceName.h; sourceTree = "<group>"; };
-		EE9EAE321CB7E2640043F385 /* StrConstMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StrConstMgr.cpp; path = common/StrConstMgr.cpp; sourceTree = "<group>"; };
-		EE9EAE331CB7E2640043F385 /* StrConstMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrConstMgr.h; path = common/StrConstMgr.h; sourceTree = "<group>"; };
-		EE9EAE351CB7E8EA0043F385 /* Def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Def.h; path = common/Def.h; sourceTree = "<group>"; };
 		EE9EAE3A1CB88EAC0043F385 /* CoverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoverScene.cpp; sourceTree = "<group>"; };
 		EE9EAE3B1CB88EAC0043F385 /* CoverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverScene.h; sourceTree = "<group>"; };
 		EE9EAE3D1CB899980043F385 /* HomeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HomeScene.cpp; sourceTree = "<group>"; };
@@ -178,8 +180,6 @@
 		EED949471CBE7EFD001C4EC0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadyScene.cpp; sourceTree = "<group>"; };
 		EED949491CBE7EFD001C4EC0 /* ReadyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyScene.h; sourceTree = "<group>"; };
-		EEDD20E21CB6B663006DD053 /* LayoutUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayoutUtil.cpp; path = common/LayoutUtil.cpp; sourceTree = "<group>"; };
-		EEDD20E31CB6B663006DD053 /* LayoutUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayoutUtil.h; path = common/LayoutUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,9 +311,9 @@
 		46880B8319C43A87006E1F66 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EE3F610F1CC4042C00EA9D24 /* common */,
 				EEBCC3341CC1E1DB00EF615A /* battle */,
 				EE9EAE391CB88EAC0043F385 /* ui */,
-				EEDD20E11CB6B5ED006DD053 /* common */,
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
 			);
@@ -368,6 +368,20 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		EE3F610F1CC4042C00EA9D24 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				EE3F61101CC4042C00EA9D24 /* Def.h */,
+				EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */,
+				EE3F61121CC4042C00EA9D24 /* LayoutUtil.h */,
+				EE3F61131CC4042C00EA9D24 /* ResourceName.cpp */,
+				EE3F61141CC4042C00EA9D24 /* ResourceName.h */,
+				EE3F61151CC4042C00EA9D24 /* StrConstMgr.cpp */,
+				EE3F61161CC4042C00EA9D24 /* StrConstMgr.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		EE9EAE391CB88EAC0043F385 /* ui */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,20 +408,6 @@
 				EEBCC33A1CC1E1DB00EF615A /* BattleView.h */,
 			);
 			path = battle;
-			sourceTree = "<group>";
-		};
-		EEDD20E11CB6B5ED006DD053 /* common */ = {
-			isa = PBXGroup;
-			children = (
-				EE9EAE351CB7E8EA0043F385 /* Def.h */,
-				EE9EAE321CB7E2640043F385 /* StrConstMgr.cpp */,
-				EE9EAE331CB7E2640043F385 /* StrConstMgr.h */,
-				EE8D73151CB6BCCE006EFDD5 /* ResourceName.h */,
-				EE8D73131CB6BCC4006EFDD5 /* ResourceName.cpp */,
-				EEDD20E21CB6B663006DD053 /* LayoutUtil.cpp */,
-				EEDD20E31CB6B663006DD053 /* LayoutUtil.h */,
-			);
-			name = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,17 +547,17 @@
 				EEBCC33C1CC1E1DB00EF615A /* BattleModel.cpp in Sources */,
 				EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
-				EE8D73141CB6BCC4006EFDD5 /* ResourceName.cpp in Sources */,
 				EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */,
 				EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				EE3F61191CC4042C00EA9D24 /* StrConstMgr.cpp in Sources */,
 				EEBCC33B1CC1E1DB00EF615A /* BattleContral.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				EE3F61181CC4042C00EA9D24 /* ResourceName.cpp in Sources */,
 				EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				EE9EAE341CB7E2640043F385 /* StrConstMgr.cpp in Sources */,
 				EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */,
-				EEDD20E41CB6B663006DD053 /* LayoutUtil.cpp in Sources */,
+				EE3F61171CC4042C00EA9D24 /* LayoutUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

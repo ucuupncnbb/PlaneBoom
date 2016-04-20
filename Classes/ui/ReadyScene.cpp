@@ -1,7 +1,7 @@
 #include "ReadyScene.h"
 #include "GameScene.h"
 #include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
+#include "CocosGUI.h"
 #include "Def.h"
 
 USING_NS_CC;
