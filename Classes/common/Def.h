@@ -8,16 +8,16 @@
 
 
 //def single class
-#define CREATE_SINGLE_CLASS(AAA) public: \
-static AAA* getInstance()\
-{   if (instance == NULL) {instance = new AAA();return instance;}\
-    else {return instance;}\
-}\
+#define CREATE_SINGLE_CLASS(AAA) \
 private:\
-AAA();\
-AAA(const AAA&);\
-AAA& operator=(const AAA&);\
-static AAA* instance;\
+AAA(){}\
+AAA(const AAA&){}\
+AAA& operator=(const AAA&){}\
+public: static AAA* getInstance()\
+{   static AAA* instance;\
+    if (instance == NULL){instance = new AAA();return instance;}\
+    return instance;\
+}\
 
 
 //Def String
@@ -27,6 +27,15 @@ static AAA* instance;\
 
 #define GET_CONST_STRING(key)  StringRes::key
 
+//Def Object
+#define DEL_READ_ONLY_OBJ(Type,Value,FunName) \
+protected: Type Value;\
+public: Type get#FunName(){return Value;}
+
+#define DEL_WRITE_READ_OBJ(Type,Value,FunName) \
+protected: Type Value;\
+public: Type get#FunName(){return Value;}\
+public: void set#FunName(Type temp){Value = temp;}
 
 
 #include "StrConstMgr.h"

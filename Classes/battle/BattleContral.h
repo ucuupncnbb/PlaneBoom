@@ -1,19 +1,21 @@
-#ifndef __BATTLE_CONTRAL_H_
-#define __BATTLE_CONTRAL_H_
+#ifndef __BATTLE_CONTROL_H_
+#define __BATTLE_CONTROL_H_
 
 #include "def.h"
 #include "BattleView.h"
 #include "BattleModel.h"
 
-class BattleContral
+class BattleControl
 {
 public:
-    BattleContral();
-    ~BattleContral();
+    CREATE_SINGLE_CLASS(BattleControl);
+public:
+    void intiBattle(Node *parent);
+    void startBattle();
     
 private:
-    BattleView _view;
-    BattleModel _model;
+    BattleView* m_view;
+    BattleModel* m_model;
 };
 
 

@@ -13,6 +13,7 @@ namespace ResourceName
         DEF_CONST_STRING(READY_BG,"Images/ready_bg.jpg");
         DEF_CONST_STRING(EASY_BTN,"Images/easy_btn.png");
         DEF_CONST_STRING(HARD_BTN,"Images/hard_btn.png");
+        DEF_CONST_STRING(MY_PLANE,"Images/my_plane.png");
         
     };
 };

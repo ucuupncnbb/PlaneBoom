@@ -35,9 +35,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     //Screen adaptation
     Size  adSize = Size(glview->getVisibleSize());
-    LayoutUtil::init(adSize.width,adSize.height);
+    LayoutUtil::init(adSize.height,adSize.width);
     
-    director->getOpenGLView()->setDesignResolutionSize(LayoutUtil::getHeight(),
+    glview->setDesignResolutionSize(LayoutUtil::getHeight(),
                                                        LayoutUtil::getWidth(), ResolutionPolicy::SHOW_ALL);
 
     // turn on display FPS

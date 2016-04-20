@@ -1,14 +1,21 @@
 #ifndef __BATTLE_VIEW_H__
 #define __BATTLE_VIEW_H__
+#include "Def.h"
 
 #include "cocos2d.h"
 USING_NS_CC;
 
-class BattleView : Layer
+class BattleView
 {
-
-    virtual void onEnter();
-    virtual void onExit();
+public:
+    BattleView(Node *parent);
+    ~BattleView();
+public:
+    void createOneBall();
+private:
+    //Layer* m_MainLayer;
+    Node* parentLayer;
+    Sprite* plSprite;
 };
 
 

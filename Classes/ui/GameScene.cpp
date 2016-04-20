@@ -1,7 +1,9 @@
-#include "GameScene.h"
-#include "HomeScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "CocosGUI.h"
+
+#include "GameScene.h"
+#include "HomeScene.h"
+#include "BattleContral.h"
 #include "Def.h"
 
 USING_NS_CC;
@@ -52,8 +54,9 @@ bool GameScene::init()
 
     LayoutUtil::layoutParentCenter(stopItem,0,-100);
     
-
-
+    //init battle contral
+    BattleControl::getInstance()->intiBattle(this);
+    
     return true;
 }
 
