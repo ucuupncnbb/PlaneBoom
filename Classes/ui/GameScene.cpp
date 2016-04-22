@@ -1,10 +1,10 @@
 #include "cocostudio/CocoStudio.h"
-#include "CocosGUI.h"
+#include "ui/CocosGUI.h"
 
 #include "GameScene.h"
 #include "HomeScene.h"
-#include "BattleContral.h"
-#include "Def.h"
+#include "../battle/BattleContral.h"
+#include "../common/Def.h"
 
 USING_NS_CC;
 

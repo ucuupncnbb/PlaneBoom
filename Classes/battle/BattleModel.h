@@ -1,6 +1,6 @@
 #ifndef __BATTLE_MODEL_H__
 #define __BATTLE_MODEL_H__
-#include "Def.h"
+#include "../common/Def.h"
 #include "cocos2d.h"
 
 USING_NS_CC;

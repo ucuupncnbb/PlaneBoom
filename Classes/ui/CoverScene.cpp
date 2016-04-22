@@ -2,7 +2,7 @@
 #include "ReadyScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
-#include "Def.h"
+#include "../common/Def.h"
 
 USING_NS_CC;
 

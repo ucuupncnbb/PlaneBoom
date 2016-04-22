@@ -1,8 +1,8 @@
 #include "ReadyScene.h"
 #include "GameScene.h"
 #include "cocostudio/CocoStudio.h"
-#include "CocosGUI.h"
-#include "Def.h"
+#include "ui/CocosGUI.h"
+#include "../common/Def.h"
 
 USING_NS_CC;
 

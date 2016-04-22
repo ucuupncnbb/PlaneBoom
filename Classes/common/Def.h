@@ -15,7 +15,6 @@ AAA(const AAA&){}\
 AAA& operator=(const AAA&){}\
 public: static AAA* getInstance()\
 {   static AAA* instance;\
-    if (instance == NULL){instance = new AAA();return instance;}\
     return instance;\
 }\
 

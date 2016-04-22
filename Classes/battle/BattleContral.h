@@ -1,7 +1,7 @@
 #ifndef __BATTLE_CONTROL_H_
 #define __BATTLE_CONTROL_H_
 
-#include "def.h"
+#include "../common/Def.h"
 #include "BattleView.h"
 #include "BattleModel.h"
 

@@ -1,8 +1,10 @@
 #ifndef __BATTLE_VIEW_H__
 #define __BATTLE_VIEW_H__
-#include "Def.h"
 
 #include "cocos2d.h"
+
+#include "../common/Def.h"
+
 USING_NS_CC;
 
 class BattleView

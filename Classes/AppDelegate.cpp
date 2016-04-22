@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
-#include "CoverScene.h"
+#include "ui/CoverScene.h"
 
-#include "Def.h"
+#include "common/Def.h"
 
 USING_NS_CC;
 
