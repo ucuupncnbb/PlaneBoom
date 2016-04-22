@@ -56,6 +56,7 @@ bool GameScene::init()
     
     //init battle contral
     BattleControl::getInstance()->intiBattle(this);
+    BattleControl::getInstance()->startBattle();
     
     return true;
 }

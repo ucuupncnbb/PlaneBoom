@@ -14,7 +14,7 @@ public:
     ~BattleView();
 public:
     void createOneBall();
-private:
+public:
     //Layer* m_MainLayer;
     Node* parentLayer;
     Sprite* plSprite;

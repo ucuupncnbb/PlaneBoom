@@ -19,6 +19,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp\
 ../../Classes/common/LayoutUtil.cpp\
 ../../Classes/common/ResourceName.cpp\
 ../../Classes/common/StrConstMgr.cpp\
+../../Classes/common/VisibleRect.cpp\
 ../../Classes/ui/CoverScene.cpp\
 ../../Classes/ui/GameScene.cpp\
  ../../Classes/ui/HomeScene.cpp\

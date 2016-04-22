@@ -70,6 +70,7 @@
 		EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */; };
 		EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949461CBE7EFD001C4EC0 /* GameScene.cpp */; };
 		EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */; };
+		EEE4DA2D1CCA6F09004401D6 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,8 @@
 		EED949471CBE7EFD001C4EC0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadyScene.cpp; sourceTree = "<group>"; };
 		EED949491CBE7EFD001C4EC0 /* ReadyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyScene.h; sourceTree = "<group>"; };
+		EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisibleRect.cpp; sourceTree = "<group>"; };
+		EEE4DA2C1CCA6F09004401D6 /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +374,8 @@
 		EE3F610F1CC4042C00EA9D24 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */,
+				EEE4DA2C1CCA6F09004401D6 /* VisibleRect.h */,
 				EE3F61101CC4042C00EA9D24 /* Def.h */,
 				EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */,
 				EE3F61121CC4042C00EA9D24 /* LayoutUtil.h */,
@@ -558,6 +563,7 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */,
 				EE3F61171CC4042C00EA9D24 /* LayoutUtil.cpp in Sources */,
+				EEE4DA2D1CCA6F09004401D6 /* VisibleRect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

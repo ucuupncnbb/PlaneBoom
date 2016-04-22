@@ -14,6 +14,7 @@
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/easy_btn.png \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/game_bg.jpg \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/hard_btn.png \
+/Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/my_plane.png \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/ready_bg.jpg \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/start_null.jpg \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/start_sele.jpg \
