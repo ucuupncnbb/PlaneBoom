@@ -13,11 +13,15 @@ public:
     BattleView(Node *parent);
     ~BattleView();
 public:
+    void createPlane();
     void createOneBall();
+    
+    void updataAngle(double x,double y);
+    void updataPosition(Acceleration* acc);
 public:
     //Layer* m_MainLayer;
-    Node* parentLayer;
-    Sprite* plSprite;
+    Node* m_parentLayer;
+    Sprite* m_plSprite;
 };
 
 

@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "ui/CoverScene.h"
+#include "ui/GameScene.h"
 
 #include "common/Def.h"
 
@@ -49,7 +50,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     FileUtils::getInstance()->addSearchPath("res");
 
     // create a scene. it's an autorelease object
-    auto scene = CoverScene::createScene();
+    auto scene = GameScene::createScene();
 
     // run
     director->runWithScene(scene);

@@ -347,8 +347,8 @@ obj/local/armeabi/objs-debug/cocos2dcpp_shared/__/__/Classes/AppDelegate.o: \
  /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/../cocos2d/cocos/3d/../deprecated/CCSet.h \
  /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/../cocos2d/cocos/3d/../deprecated/CCString.h \
  /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h \
- jni/../../Classes/ui/CoverScene.h jni/../../Classes/common/Def.h \
- jni/../../Classes/common/LayoutUtil.h \
+ jni/../../Classes/ui/CoverScene.h jni/../../Classes/ui/GameScene.h \
+ jni/../../Classes/common/Def.h jni/../../Classes/common/LayoutUtil.h \
  jni/../../Classes/common/VisibleRect.h \
  jni/../../Classes/common/StrConstMgr.h jni/../../Classes/common/Def.h \
  jni/../../Classes/common/ResourceName.h
@@ -1050,6 +1050,8 @@ jni/../../Classes/AppDelegate.h:
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/../cocos2d/cocos/3d/../deprecated/CCDeprecated.h:
 
 jni/../../Classes/ui/CoverScene.h:
+
+jni/../../Classes/ui/GameScene.h:
 
 jni/../../Classes/common/Def.h:
 
