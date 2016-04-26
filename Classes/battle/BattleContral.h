@@ -13,14 +13,18 @@ public:
 public:
     void intiBattle(Node *parent);
     void startBattle();
+    void update(float f);
     
 private:
     EventDispatcher* _eventDispatcher;
     BattleView* m_view;
     BattleModel* m_model;
     Scene* m_parentScene;
+    bool m_isStart;
 private:
     void startMovePlane();
+    void startCreateDot();
+    
 };
 
 

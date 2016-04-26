@@ -4,7 +4,7 @@
 #include "BattleView.h"
 
 
-BattleControl::BattleControl()
+BattleControl::BattleControl() : m_isStart(false)
 {
     
 }
@@ -16,16 +16,40 @@ BattleControl::~BattleControl()
 
 void BattleControl::intiBattle(Node* parent)
 {
-    m_model = new BattleModel();
     m_view = new BattleView(parent);
     m_parentScene = (Scene*)parent;
     
+    //create plane
+    if( BattleModel::getInstance()->createPlaneModel() )
+    {
+        m_view->createPlane();
+    }
+    //test
+    int index = BattleModel::getInstance()->createOneDotModel();
+
+    auto tempDot = BattleModel::getInstance()->getBallByID(index);
+    m_view->createOneBall(tempDot->m_pos,index);
     
-    m_view->createPlane();
 }
 void BattleControl::startBattle()
 {
     this->startMovePlane();
+    m_isStart = true;
+    
+}
+void BattleControl::update(float f)
+{
+    if( !m_isStart )
+    {
+        return ;
+    }
+    //to do create enemy dot;
+    
+}
+
+void BattleControl::startCreateDot()
+{
+    
 }
 void BattleControl::startMovePlane()
 {

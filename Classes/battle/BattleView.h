@@ -14,7 +14,7 @@ public:
     ~BattleView();
 public:
     void createPlane();
-    void createOneBall();
+    void createOneBall(Vec2 pos,int tag);
     
     void updataAngle(double x,double y);
     void updataPosition(Acceleration* acc);

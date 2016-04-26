@@ -17,6 +17,7 @@ namespace ResourceName
         DEL_CONST_STRING(EASY_BTN);
         DEL_CONST_STRING(HARD_BTN);
         DEL_CONST_STRING(MY_PLANE);
+        DEL_CONST_STRING(DOT_ENEMMY);
     };
 };
 

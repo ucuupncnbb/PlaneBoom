@@ -58,9 +58,15 @@ bool GameScene::init()
     BattleControl::getInstance()->intiBattle(this);
     BattleControl::getInstance()->startBattle();
     
+    //udata
+    this->schedule(schedule_selector(GameScene::GameUpdata),0);
+    
     return true;
 }
-
+void GameScene::GameUpdata(float f)
+{
+    BattleControl::getInstance()->update(f);
+}
 void GameScene::stopMenuCallBack(Ref* pSender)
 {
     auto scene = HomeScene::createScene();

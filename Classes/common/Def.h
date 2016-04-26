@@ -7,6 +7,7 @@
 #include "VisibleRect.h"
 //#include "StrConstMgr.h"
 
+#define OBJ_TAG_COUNT 100
 
 //def single class
 #define CREATE_SINGLE_CLASS(clazz) \

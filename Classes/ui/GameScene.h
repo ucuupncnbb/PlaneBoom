@@ -16,6 +16,7 @@ public:
     CREATE_FUNC(GameScene);
 private:
     void stopMenuCallBack(Ref* pSender);
+    void GameUpdata(float f);
 };
 
 #endif // __Cover_SCENE_H__

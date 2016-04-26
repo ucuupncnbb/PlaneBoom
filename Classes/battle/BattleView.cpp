@@ -63,6 +63,17 @@ void BattleView::updataPosition(Acceleration* acc)
     m_plSprite->setPosition(movePos);
     
 }
+void BattleView::createOneBall(Vec2 pos,int index)
+{
+    auto oneEnnemy = Sprite::create(ResourceName::Images::DOT_ENEMMY);
+    m_parentLayer->addChild(oneEnnemy,10);
+    oneEnnemy->setTag(index + OBJ_TAG_COUNT);
+    
+    oneEnnemy->setPosition(pos);
+}
+
+
+
 
 
 

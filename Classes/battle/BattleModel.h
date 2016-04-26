@@ -7,27 +7,42 @@ USING_NS_CC;
 
 class BallModel
 {
-    
+public:
+    BallModel();
+    ~BallModel();
+    void createBall(Vec2 dir,Vec2 speed,Vec2 pos);
+public:
+    int m_tag;
+    bool m_isCanKill;
+    Vec2 m_direVec;
+    Vec2 m_speed;
+    Vec2 m_pos;
 };
 
 
 class PlaneModel
 {
-    //DEL_WRITE_READ_OBJ(float,speedX,SpeedX);
-    //DEL_WRITE_READ_OBJ(float,speedY,SpeedY);
+public:
+    PlaneModel();
+    ~PlaneModel();
 
 };
 
 class BattleModel
 {
 public:
-    BattleModel();
-    ~BattleModel();
-public:
-    vector<BallModel*> ballVec;
-    PlaneModel* m_planeModel;
+    CREATE_SINGLE_CLASS(BattleModel);
+    void initModel();
     
-
+    bool createPlaneModel();
+    
+    int createOneDotModel();
+public:
+    map<int,BallModel*> m_ballMap;
+    PlaneModel* m_planeModel;
+public:
+    BallModel* getBallByID(int index);
+    
 };
 
 
