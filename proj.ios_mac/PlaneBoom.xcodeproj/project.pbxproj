@@ -11,6 +11,7 @@
 		1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FB07180E9839004C840B /* libcocos2d iOS.a */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		210A4C451CCDBAC100C47F2C /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 210A4C431CCDBAC100C47F2C /* VisibleRect.cpp */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
 		46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8419C43A87006E1F66 /* AppDelegate.cpp */; };
@@ -70,7 +71,6 @@
 		EEBCC33D1CC1E1DB00EF615A /* BattleView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBCC3391CC1E1DB00EF615A /* BattleView.cpp */; };
 		EED9494A1CBE7EFD001C4EC0 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949461CBE7EFD001C4EC0 /* GameScene.cpp */; };
 		EED9494B1CBE7EFD001C4EC0 /* ReadyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */; };
-		EEE4DA2D1CCA6F09004401D6 /* VisibleRect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +110,8 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* PlaneBoom-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlaneBoom-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		210A4C431CCDBAC100C47F2C /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisibleRect.cpp; sourceTree = "<group>"; };
+		210A4C441CCDBAC100C47F2C /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRect.h; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		46880B8419C43A87006E1F66 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppDelegate.cpp; sourceTree = "<group>"; };
 		46880B8519C43A87006E1F66 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,8 +183,6 @@
 		EED949471CBE7EFD001C4EC0 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EED949481CBE7EFD001C4EC0 /* ReadyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadyScene.cpp; sourceTree = "<group>"; };
 		EED949491CBE7EFD001C4EC0 /* ReadyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadyScene.h; sourceTree = "<group>"; };
-		EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisibleRect.cpp; sourceTree = "<group>"; };
-		EEE4DA2C1CCA6F09004401D6 /* VisibleRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisibleRect.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,8 +374,8 @@
 		EE3F610F1CC4042C00EA9D24 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				EEE4DA2B1CCA6F09004401D6 /* VisibleRect.cpp */,
-				EEE4DA2C1CCA6F09004401D6 /* VisibleRect.h */,
+				210A4C431CCDBAC100C47F2C /* VisibleRect.cpp */,
+				210A4C441CCDBAC100C47F2C /* VisibleRect.h */,
 				EE3F61101CC4042C00EA9D24 /* Def.h */,
 				EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */,
 				EE3F61121CC4042C00EA9D24 /* LayoutUtil.h */,
@@ -563,7 +563,7 @@
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */,
 				EE3F61171CC4042C00EA9D24 /* LayoutUtil.cpp in Sources */,
-				EEE4DA2D1CCA6F09004401D6 /* VisibleRect.cpp in Sources */,
+				210A4C451CCDBAC100C47F2C /* VisibleRect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
