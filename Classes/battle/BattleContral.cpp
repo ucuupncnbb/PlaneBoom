@@ -38,6 +38,8 @@ void BattleControl::update(float f)
         return ;
     }
     this->startCreateDot();
+    
+    this->moveToPlane();
 }
 
 void BattleControl::startCreateDot()
@@ -71,6 +73,15 @@ void BattleControl::startMovePlane()
     });
     
     m_parentScene->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, planeSpr);
+}
+void BattleControl::moveToPlane()
+{
+    auto ballMap = BattleModel::getInstance()->m_ballVec;
+     for(auto it=ballMap.begin(); it!=ballMap.end(); ++it)
+     {
+         
+     }
+    
 }
 
 

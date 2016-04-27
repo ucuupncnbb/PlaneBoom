@@ -9,11 +9,12 @@ BallModel::~BallModel()
 {
 
 }
-void BallModel::createBall(Vec2 dir,Vec2 speed,Vec2 pos)
+void BallModel::createBall(Vec2 dir,Vec2 speed,Vec2 pos,int tag)
 {
     m_direVec = dir;
     m_speed = speed;
     m_pos = pos;
+    m_tag = tag;
 }
 //-----------------------------BallModel----------------------------
 PlaneModel::PlaneModel()
@@ -33,7 +34,7 @@ BattleModel::BattleModel()
 }
 void BattleModel::initModel()
 {
-    m_dotCretePorba = 10;
+    m_dotCretePorba = 15;
     m_dotTotalPorba = 1000;
 }
 bool BattleModel::createPlaneModel()
@@ -42,22 +43,23 @@ bool BattleModel::createPlaneModel()
 }
 BallModel* BattleModel::getBallByID(int index)
 {
-    if(m_ballMap.find(index) != m_ballMap.end())
+    int size = m_ballVec.size();
+    for(int i=0; i<size; i++)
     {
-        return m_ballMap[index];
+        if(index == m_ballVec.at(i)->m_tag - OBJ_TAG_COUNT)
+        {
+            return m_ballVec.at(i);
+        }
     }
-    else
-    {
-        return nullptr;
-    }
+    return nullptr;
 }
 
 int BattleModel::createOneDotModel()
 {
-    int index = m_ballMap.size();
+    int index = m_ballVec.size();
     BallModel *dotTemp = new BallModel();
     
-    m_ballMap[index] = dotTemp;
+    m_ballVec.push_back(dotTemp);
     
     //rand to init data
     timeval t_rand;
@@ -71,7 +73,7 @@ int BattleModel::createOneDotModel()
     Vec2 dir = Vec2(100,100);
     Vec2 speed = Vec2(100,100);
     
-    dotTemp->createBall(dir,speed,pos);
+    dotTemp->createBall(dir,speed,pos,index + OBJ_TAG_COUNT);
     
     return index;
 }

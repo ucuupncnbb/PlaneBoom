@@ -3,6 +3,7 @@
 #include "../common/Def.h"
 #include "cocos2d.h"
 
+using namespace std;
 USING_NS_CC;
 
 class BallModel
@@ -10,7 +11,7 @@ class BallModel
 public:
     BallModel();
     ~BallModel();
-    void createBall(Vec2 dir,Vec2 speed,Vec2 pos);
+    void createBall(Vec2 dir,Vec2 speed,Vec2 pos,int tag);
 public:
     int m_tag;
     bool m_isCanKill;
@@ -38,7 +39,7 @@ public:
     
     int createOneDotModel();
 public:
-    map<int,BallModel*> m_ballMap;
+    vector<BallModel*> m_ballVec;
     PlaneModel* m_planeModel;
     
     double m_dotCretePorba;

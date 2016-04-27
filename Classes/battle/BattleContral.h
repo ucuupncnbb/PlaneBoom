@@ -24,6 +24,7 @@ private:
 private:
     void startMovePlane();
     void startCreateDot();
+    void moveToPlane();
     
 };
 
