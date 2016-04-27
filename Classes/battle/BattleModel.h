@@ -40,6 +40,9 @@ public:
 public:
     map<int,BallModel*> m_ballMap;
     PlaneModel* m_planeModel;
+    
+    double m_dotCretePorba;
+    double m_dotTotalPorba;
 public:
     BallModel* getBallByID(int index);
     

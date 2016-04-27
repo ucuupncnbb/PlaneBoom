@@ -19,23 +19,17 @@ void BattleControl::intiBattle(Node* parent)
     m_view = new BattleView(parent);
     m_parentScene = (Scene*)parent;
     
+    BattleModel::getInstance()->initModel();
     //create plane
     if( BattleModel::getInstance()->createPlaneModel() )
     {
         m_view->createPlane();
     }
-    //test
-    int index = BattleModel::getInstance()->createOneDotModel();
-
-    auto tempDot = BattleModel::getInstance()->getBallByID(index);
-    m_view->createOneBall(tempDot->m_pos,index);
-    
 }
 void BattleControl::startBattle()
 {
     this->startMovePlane();
     m_isStart = true;
-    
 }
 void BattleControl::update(float f)
 {
@@ -43,13 +37,23 @@ void BattleControl::update(float f)
     {
         return ;
     }
-    //to do create enemy dot;
-    
+    this->startCreateDot();
 }
 
 void BattleControl::startCreateDot()
 {
+    timeval t_rand;
+    gettimeofday(&t_rand, NULL);
+    long i_rand = t_rand.tv_sec * 1000+ t_rand.tv_usec/1000;
+    srand((int)i_rand);
+    int randCreate = (int)rand() % (int)BattleModel::getInstance()->m_dotTotalPorba;
     
+    if(randCreate < BattleModel::getInstance()->m_dotCretePorba)
+    {
+        int index = BattleModel::getInstance()->createOneDotModel();
+        auto tempDot = BattleModel::getInstance()->getBallByID(index);
+        m_view->createOneBall(tempDot->m_pos,index);
+    }
 }
 void BattleControl::startMovePlane()
 {
