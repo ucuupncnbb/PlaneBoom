@@ -16,15 +16,19 @@ public:
     void update(float f);
     
 private:
+    constexpr static float BALL_MOVE_SPEED = 10;
+    int _moveBallTime;
     EventDispatcher* _eventDispatcher;
     BattleView* m_view;
     BattleModel* m_model;
     Scene* m_parentScene;
     bool m_isStart;
+    int m_moveTime;
+    int m_moveDistan;
 private:
     void startMovePlane();
     void startCreateDot();
-    void moveToPlane();
+    void moveBall();
     
 };
 

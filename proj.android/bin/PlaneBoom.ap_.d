@@ -11,6 +11,7 @@
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/fonts/arial.ttf \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/fonts/Marker Felt.ttf \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/bg_cover.jpg \
+/Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/dot_enemy.png \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/easy_btn.png \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/game_bg.jpg \
 /Users/shishishishishishi/Documents/Wang/dev/PlaneBoom/proj.android/assets/Images/hard_btn.png \

@@ -34,6 +34,7 @@ BattleModel::BattleModel()
 }
 void BattleModel::initModel()
 {
+    // 创建敌人的概率
     m_dotCretePorba = 15;
     m_dotTotalPorba = 1000;
 }

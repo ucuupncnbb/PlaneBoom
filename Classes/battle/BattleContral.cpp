@@ -18,6 +18,9 @@ void BattleControl::intiBattle(Node* parent)
 {
     m_view = new BattleView(parent);
     m_parentScene = (Scene*)parent;
+    m_moveTime = 30;
+    m_moveDistan = 5;
+    _moveBallTime = 0;
     
     BattleModel::getInstance()->initModel();
     //create plane
@@ -25,6 +28,7 @@ void BattleControl::intiBattle(Node* parent)
     {
         m_view->createPlane();
     }
+    
 }
 void BattleControl::startBattle()
 {
@@ -39,7 +43,17 @@ void BattleControl::update(float f)
     }
     this->startCreateDot();
     
-    this->moveToPlane();
+    if(_moveBallTime < 10)
+    {
+        _moveBallTime++;
+    }
+    else
+    {
+        this->moveBall();
+        _moveBallTime = 0;
+    }
+    
+    
 }
 
 void BattleControl::startCreateDot()
@@ -74,13 +88,24 @@ void BattleControl::startMovePlane()
     
     m_parentScene->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, planeSpr);
 }
-void BattleControl::moveToPlane()
+void BattleControl::moveBall()
 {
     auto ballMap = BattleModel::getInstance()->m_ballVec;
-     for(auto it=ballMap.begin(); it!=ballMap.end(); ++it)
-     {
-         
-     }
+    Vec2 pPosVec = m_view->m_plSprite->getPosition();
+    
+    for(auto iter=ballMap.begin(); iter!=ballMap.end(); ++iter)
+    {
+        int tag = (*iter)->m_tag;
+        
+        auto ball = m_parentScene->getChildByTag(tag);
+        Vec2 bPosVec = ball->getPosition();
+        
+        // move ball to plane
+        ball->stopAllActions();
+        double distance = pPosVec.distance(bPosVec);
+        auto act = MoveTo::create(distance/BALL_MOVE_SPEED, pPosVec);
+        ball->runAction(act);
+    }
     
 }
 
