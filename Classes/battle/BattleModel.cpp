@@ -78,6 +78,17 @@ int BattleModel::createOneDotModel()
     
     return index;
 }
+void BattleModel::refreshGame(Scene* parentScene)
+{
+    for(auto iter=m_ballVec.begin(); iter!=m_ballVec.end(); ++iter)
+    {
+        int tag = (*iter)->m_tag;
+        
+        auto ball = parentScene->getChildByTag(tag);
+        ball->removeFromParent();
+    }
+    m_ballVec.clear();
+}
 
 
 

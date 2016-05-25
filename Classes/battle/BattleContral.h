@@ -25,10 +25,13 @@ private:
     bool m_isStart;
     int m_moveTime;
     int m_moveDistan;
+    bool m_isDead;
 private:
     void startMovePlane();
     void startCreateDot();
     void moveBall();
+    void checkDead();
+    void refreshGame();
     
 };
 

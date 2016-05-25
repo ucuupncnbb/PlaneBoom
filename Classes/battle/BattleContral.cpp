@@ -2,9 +2,9 @@
 #include "BattleContral.h"
 #include "BattleModel.h"
 #include "BattleView.h"
+#include "../ui/HomeScene.h"
 
-
-BattleControl::BattleControl() : m_isStart(false)
+BattleControl::BattleControl() : m_isStart(false),m_isDead(false)
 {
     
 }
@@ -34,10 +34,11 @@ void BattleControl::startBattle()
 {
     this->startMovePlane();
     m_isStart = true;
+    m_isDead = false;
 }
 void BattleControl::update(float f)
 {
-    if( !m_isStart )
+    if( !m_isStart || m_isDead)
     {
         return ;
     }
@@ -53,7 +54,32 @@ void BattleControl::update(float f)
         _moveBallTime = 0;
     }
     
+    checkDead();
+}
+
+//碰撞检测  to do 点对点的碰撞
+void BattleControl::checkDead()
+{
+    auto planeSpr = m_view->m_plSprite;
+    Rect rectPlane =  planeSpr->getBoundingBox();
     
+    auto ballMap = BattleModel::getInstance()->m_ballVec;
+    
+    for(auto iter=ballMap.begin(); iter!=ballMap.end(); ++iter)
+    {
+        int tag = (*iter)->m_tag;
+        
+        auto ball = m_parentScene->getChildByTag(tag);
+        if(ball->getBoundingBox().intersectsRect(rectPlane))
+        {
+            m_isDead = true;
+            BattleModel::getInstance()->refreshGame(m_parentScene);
+            //hit ,to do...
+            auto scene = HomeScene::createScene();
+            Director::getInstance()->replaceScene( TransitionSlideInT::create(1, scene));
+            break;
+        }
+    }
 }
 
 void BattleControl::startCreateDot()
@@ -106,7 +132,6 @@ void BattleControl::moveBall()
         auto act = MoveTo::create(distance/BALL_MOVE_SPEED, pPosVec);
         ball->runAction(act);
     }
-    
 }
 
 

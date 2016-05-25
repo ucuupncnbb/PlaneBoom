@@ -36,7 +36,7 @@ public:
     void initModel();
     
     bool createPlaneModel();
-    
+    void refreshGame(Scene* parentScene);
     int createOneDotModel();
 public:
     vector<BallModel*> m_ballVec;

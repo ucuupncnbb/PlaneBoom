@@ -63,6 +63,7 @@
 		EE3F61171CC4042C00EA9D24 /* LayoutUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61111CC4042C00EA9D24 /* LayoutUtil.cpp */; };
 		EE3F61181CC4042C00EA9D24 /* ResourceName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61131CC4042C00EA9D24 /* ResourceName.cpp */; };
 		EE3F61191CC4042C00EA9D24 /* StrConstMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3F61151CC4042C00EA9D24 /* StrConstMgr.cpp */; };
+		EE7396591CF5DC7D00DD686A /* SkillBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE7396571CF5DC7D00DD686A /* SkillBase.cpp */; };
 		EE8D73121CB6BA75006EFDD5 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = EE8D73111CB6BA75006EFDD5 /* Images */; };
 		EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3A1CB88EAC0043F385 /* CoverScene.cpp */; };
 		EE9EAE3F1CB899980043F385 /* HomeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE9EAE3D1CB899980043F385 /* HomeScene.cpp */; };
@@ -168,6 +169,8 @@
 		EE3F61141CC4042C00EA9D24 /* ResourceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceName.h; sourceTree = "<group>"; };
 		EE3F61151CC4042C00EA9D24 /* StrConstMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StrConstMgr.cpp; sourceTree = "<group>"; };
 		EE3F61161CC4042C00EA9D24 /* StrConstMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrConstMgr.h; sourceTree = "<group>"; };
+		EE7396571CF5DC7D00DD686A /* SkillBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SkillBase.cpp; sourceTree = "<group>"; };
+		EE7396581CF5DC7D00DD686A /* SkillBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillBase.h; sourceTree = "<group>"; };
 		EE8D73111CB6BA75006EFDD5 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		EE9EAE3A1CB88EAC0043F385 /* CoverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoverScene.cpp; sourceTree = "<group>"; };
 		EE9EAE3B1CB88EAC0043F385 /* CoverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverScene.h; sourceTree = "<group>"; };
@@ -405,6 +408,8 @@
 		EEBCC3341CC1E1DB00EF615A /* battle */ = {
 			isa = PBXGroup;
 			children = (
+				EE7396571CF5DC7D00DD686A /* SkillBase.cpp */,
+				EE7396581CF5DC7D00DD686A /* SkillBase.h */,
 				EEBCC3351CC1E1DB00EF615A /* BattleContral.cpp */,
 				EEBCC3361CC1E1DB00EF615A /* BattleContral.h */,
 				EEBCC3371CC1E1DB00EF615A /* BattleModel.cpp */,
@@ -557,6 +562,7 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				EE3F61191CC4042C00EA9D24 /* StrConstMgr.cpp in Sources */,
 				EEBCC33B1CC1E1DB00EF615A /* BattleContral.cpp in Sources */,
+				EE7396591CF5DC7D00DD686A /* SkillBase.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				EE3F61181CC4042C00EA9D24 /* ResourceName.cpp in Sources */,
 				EE9EAE3C1CB88EAC0043F385 /* CoverScene.cpp in Sources */,
