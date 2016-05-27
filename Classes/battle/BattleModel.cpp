@@ -15,6 +15,7 @@ void BallModel::createBall(Vec2 dir,Vec2 speed,Vec2 pos,int tag)
     m_speed = speed;
     m_pos = pos;
     m_tag = tag;
+    m_isCanKill = true;
 }
 //-----------------------------BallModel----------------------------
 PlaneModel::PlaneModel()
@@ -37,6 +38,10 @@ void BattleModel::initModel()
     // 创建敌人的概率
     m_dotCretePorba = 15;
     m_dotTotalPorba = 1000;
+    
+    //创建技能的概率
+    m_skillCreate = 15;
+    m_skillTotal = 1000;
 }
 bool BattleModel::createPlaneModel()
 {
@@ -54,7 +59,23 @@ BallModel* BattleModel::getBallByID(int index)
     }
     return nullptr;
 }
+void BattleModel::createOneSkill(Scene* parentScene)
+{
+    //随即常见不同类型技能
+    auto skillTemp = new SkillBase();
+    skillTemp->SkillBase::createOneSkill(ResourceName::Images::SKILL_1,0);
+    parentScene->addChild(skillTemp->m_skillSpr,20);
+    timeval t_rand;
+    gettimeofday(&t_rand, NULL);
+    long i_rand = t_rand.tv_sec * 1000+ t_rand.tv_usec/1000;
+    srand((int)i_rand);
+    int pos_X = (int)rand() % (int)LayoutUtil::getWidth();
+    int pos_Y = (int)rand() % (int)LayoutUtil::getHeight();
 
+    LayoutUtil::layoutParentLeftBottom(skillTemp->m_skillSpr,pos_X,pos_Y);
+    
+    m_skillVec.push_back(skillTemp);
+}
 int BattleModel::createOneDotModel()
 {
     int index = m_ballVec.size();
@@ -88,6 +109,12 @@ void BattleModel::refreshGame(Scene* parentScene)
         ball->removeFromParent();
     }
     m_ballVec.clear();
+    
+    for(auto iter=m_skillVec.begin(); iter!=m_skillVec.end(); ++iter)
+    {
+        (*iter)->m_skillSpr->removeFromParent();
+    }
+    m_skillVec.clear();
 }
 
 

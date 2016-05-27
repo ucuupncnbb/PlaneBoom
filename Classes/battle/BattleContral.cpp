@@ -2,6 +2,7 @@
 #include "BattleContral.h"
 #include "BattleModel.h"
 #include "BattleView.h"
+#include "SkillBase.h"
 #include "../ui/HomeScene.h"
 
 BattleControl::BattleControl() : m_isStart(false),m_isDead(false)
@@ -43,6 +44,7 @@ void BattleControl::update(float f)
         return ;
     }
     this->startCreateDot();
+    this->startCreateSkill();
     
     if(_moveBallTime < 10)
     {
@@ -70,7 +72,7 @@ void BattleControl::checkDead()
         int tag = (*iter)->m_tag;
         
         auto ball = m_parentScene->getChildByTag(tag);
-        if(ball->getBoundingBox().intersectsRect(rectPlane))
+        if(ball->getBoundingBox().intersectsRect(rectPlane) && (*iter)->m_isCanKill == true)
         {
             m_isDead = true;
             BattleModel::getInstance()->refreshGame(m_parentScene);
@@ -81,7 +83,19 @@ void BattleControl::checkDead()
         }
     }
 }
-
+void BattleControl::startCreateSkill()
+{
+    timeval t_rand;
+    gettimeofday(&t_rand, NULL);
+    long i_rand = t_rand.tv_sec * 1000+ t_rand.tv_usec/1000;
+    srand((int)i_rand);
+    int randCreate = (int)rand() % (int)BattleModel::getInstance()->m_skillTotal;
+    
+    if(randCreate < BattleModel::getInstance()->m_skillCreate)
+    {
+        BattleModel::getInstance()->createOneSkill(m_parentScene);
+    }
+}
 void BattleControl::startCreateDot()
 {
     timeval t_rand;

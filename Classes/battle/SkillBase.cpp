@@ -1,10 +1,7 @@
 #include "SkillBase.h"
 
-
-
-SkillBase::SkillBase(const std::string& filename,int type)
+void SkillBase::createOneSkill(const std::string& filename,int type)
 {
-    this->create(filename);
+    m_skillSpr = Sprite::create(filename);
     m_skillType = type;
-
 }

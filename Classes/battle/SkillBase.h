@@ -7,13 +7,13 @@
 
 USING_NS_CC;
 
-class SkillBase : Sprite
+class SkillBase
 {
 public:
-    SkillBase(const std::string& filename,int type);
+    void createOneSkill(const std::string& filename,int type);
 public:
     int m_skillType;
-
+    Sprite *m_skillSpr;
 };
 
 

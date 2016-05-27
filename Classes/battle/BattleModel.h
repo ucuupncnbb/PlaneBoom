@@ -1,6 +1,7 @@
 #ifndef __BATTLE_MODEL_H__
 #define __BATTLE_MODEL_H__
 #include "../common/Def.h"
+#include "SkillBase.h"
 #include "cocos2d.h"
 
 using namespace std;
@@ -37,13 +38,20 @@ public:
     
     bool createPlaneModel();
     void refreshGame(Scene* parentScene);
+    void createOneSkill(Scene* parentScene);
     int createOneDotModel();
 public:
     vector<BallModel*> m_ballVec;
+     vector<SkillBase*> m_skillVec;
     PlaneModel* m_planeModel;
     
+    //创建小球概率计算
     double m_dotCretePorba;
     double m_dotTotalPorba;
+    
+    //创建技能概率计算
+    double m_skillCreate;
+    double m_skillTotal;
 public:
     BallModel* getBallByID(int index);
     

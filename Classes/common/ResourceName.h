@@ -18,6 +18,7 @@ namespace ResourceName
         DEL_CONST_STRING(HARD_BTN);
         DEL_CONST_STRING(MY_PLANE);
         DEL_CONST_STRING(DOT_ENEMMY);
+        DEL_CONST_STRING(SKILL_1);
     };
 };
 

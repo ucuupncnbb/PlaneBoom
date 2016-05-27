@@ -32,6 +32,7 @@ private:
     void moveBall();
     void checkDead();
     void refreshGame();
+    void startCreateSkill();
     
 };
 
